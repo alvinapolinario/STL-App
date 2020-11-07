@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/newbackground"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu.MainMenuActivity">
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="428dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/logout"
+        android:onClick="Logout"
+        android:outlineProvider="bounds"
+        android:text="LOGOUT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPrinter"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="428dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/printing"
+        android:onClick="PrinterSetup"
+        android:outlineProvider="bounds"
+        android:text="PRINTER SETUP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoid"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="324dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/close"
+        android:onClick="VoidBet"
+        android:outlineProvider="bounds"
+        android:text="VOID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSale"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/bill"
+        android:onClick="Sales"
+        android:outlineProvider="bounds"
+        android:text="SALE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClaim"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="324dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/dollar"
+        android:onClick="Claim"
+        android:outlineProvider="bounds"
+        android:text="CLAIM"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <Button
+        android:id="@+id/btnBet"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="220dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/edit"
+        android:hapticFeedbackEnabled="false"
+        android:onClick="NewBet"
+        android:outlineProvider="bounds"
+        android:text="New Bet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="220dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/history"
+        android:onClick="History"
+        android:outlineProvider="bounds"
+        android:text="History"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHits"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="20dp"
+        android:background="#00FFFFFF"
+        android:drawableTop="@drawable/list"
+        android:onClick="Hits"
+        android:outlineProvider="bounds"
+        android:text="HITS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="CLIENT v1"
+        android:textAlignment="center"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="128dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="160dp"
+        android:text="SK GROUP GAMING"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
